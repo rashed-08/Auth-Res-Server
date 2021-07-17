@@ -1,0 +1,2 @@
+insert into roles (role_id, role) values (1, "ROLE_USER");
+insert into user (user_id, first_name, last_name, email, username, password, is_active) values (1, "rashedul", "islam", "rashedul@gmail.com","rashed","$2a$08$fL7u5xcvsZl78su29x1ti.dxI.9rYO8t0q5wk2ROJ.1cdR53bmaVG",true);

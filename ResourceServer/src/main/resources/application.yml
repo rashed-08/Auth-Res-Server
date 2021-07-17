@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: resourceserver
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value:
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxzgnlwat+JQMsncWmWIR
+          L6NH7OLHU4xcRonrQj7uEbqSRakSYIdWcyDykKzwxYN8fPfgG7bwBpc1DTV2Oq7S
+          gqI+3LRrrfgSMJbVKBNlhA1jUsvtX0QNXBv9vExyKiZa3iqhY7dpgmFmgSk/B2lF
+          aXeaL/GTyzgSZ03wlD3aWkpJyq3gO3AcJ1lTq5BIynRJnO3z+9pAlJ/oGArSB8iQ
+          xaJO9+ni9hbIGAZDzDAEjPabDYCsWRaieabhiv0RxVjFbiSQqBNhMUcSGKTd2Alj
+          L5GenI0gTJ7ysFkinsrDegeNGR8AXMDaueOHE9dRg7D8ylfcjpOdp/RZMyl3Qd9H
+          WwIDAQAB
+          -----END PUBLIC KEY-----
