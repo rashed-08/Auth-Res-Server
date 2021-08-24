@@ -1,0 +1,71 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mytest?createDatabaseIfNotExist=true
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  security:
+    oauth2:
+      resource:
+        filter-order: 3
+
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+
+
+config:
+  oauth2:
+    clientId: test
+    clientsecret: test
+    accesstoken_validity: 1
+    refreshtoken_validity: 30
+    private_key:
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEpAIBAAKCAQEAxzgnlwat+JQMsncWmWIRL6NH7OLHU4xcRonrQj7uEbqSRakS
+      YIdWcyDykKzwxYN8fPfgG7bwBpc1DTV2Oq7SgqI+3LRrrfgSMJbVKBNlhA1jUsvt
+      X0QNXBv9vExyKiZa3iqhY7dpgmFmgSk/B2lFaXeaL/GTyzgSZ03wlD3aWkpJyq3g
+      O3AcJ1lTq5BIynRJnO3z+9pAlJ/oGArSB8iQxaJO9+ni9hbIGAZDzDAEjPabDYCs
+      WRaieabhiv0RxVjFbiSQqBNhMUcSGKTd2AljL5GenI0gTJ7ysFkinsrDegeNGR8A
+      XMDaueOHE9dRg7D8ylfcjpOdp/RZMyl3Qd9HWwIDAQABAoIBAQCRPRRH27vLpQvY
+      tE+KhV9oLo8KWY7eD09ascQNKNnhnPZ0yL04GJLjHlsZNKvYI3MHnKMLMYSuGWC4
+      /4fxYnDggi54MyTp0RhZyi0eqX1yF1yZCUlGEdP3mgSTWdxFdG7813GPxDCsuBvG
+      AG8OFSZgrKyBVYrdNkTcgYrqWGmvNn4BVSrjp9zUMlsGZDFCKNrmRVfDcv6VzOgI
+      NxcOToxbxqDFx82klSojm9sTUX85hpydLMXpdY+i+/Pb/hqR1+d0a9RCns4Ln7lU
+      dMEZIsL6MH4jPTVZ3BYQ/Tp7hI/LFEo4VMyH2VDYEezOKndax5dDwg+lgXnemIyb
+      0lcLqykRAoGBAO1niKTnvQbHRGbx3N/TvsU9ycjw7YktzuCR8nJP7vfqoDHuvL/3
+      YTkkQ2LXEMw2SBN8BNSiJeop4z1vHPO3RqQJrHNlNUTn7hvVqCPstCYW6OJYBJI+
+      VM7MadKrd70h1UNrCP39SwnGK9wI/xrK9uIuNZ53H48Du3+IXUHHx8iTAoGBANbS
+      7bNBjaZfjkAIcNwyRfquV4u7+y1vJUTQN5fxYucuselyYgoSpFr4VkYSotjiuufi
+      iD2XJhRtxW/TZz+iQ+j4kBfTZj44yCQIvAv9Bp1egkYgDIZS6D6Zf/cSw8xg0ocq
+      Rg4itkZOaIJ599V6VrO5QhPfdMoK5+wBcTWUJCsZAoGASair/u5f+fBtyrsUWuYp
+      9KzdJNmL+doarBbccJdYf9duaM+4BJ/OrJoRxmMQNSxKZLFAFnFQ7jyc4vzMsNmW
+      s2LE/PDT/FMxz7UU/EB/DKpjC4dfs7hfO+K0msbU2fvbXZWiLpweYiP4i8bG0BtV
+      Sown2sj/I7J2xHUc6kIAPL0CgYAL5hcAbMsZwgUxCsali6tQnUOAG+NnutZHn3jU
+      06v0viNgmNNRV4L+/u5YZ0PZ24UavvNo5exYCVR8Qyte3PACAXKJv03UeHStekZg
+      K52oLcntdGz9K65teTcbSlDKCzrd/btvoQCTmFg1kefmTSZsQgCk9SWU41HBQrsw
+      iooOUQKBgQCm+/nybViMkOJOLuAsAXMUSkuBUrUIZUEH+Qe6J6jdDRLdm+iX88uc
+      r31WSUnLFQspiAZWADu+qTXVg1sqfxbpH0wZ8oM8wDnX86iQsO0BP2YwvPh5vjn9
+      5eFpjltB5Wre6XuqenbdDUvlPWCgQ5onGH3dnTt1yvrzRTYv9t2h8w==
+      -----END RSA PRIVATE KEY-----
+    public_key:
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxzgnlwat+JQMsncWmWIR
+      L6NH7OLHU4xcRonrQj7uEbqSRakSYIdWcyDykKzwxYN8fPfgG7bwBpc1DTV2Oq7S
+      gqI+3LRrrfgSMJbVKBNlhA1jUsvtX0QNXBv9vExyKiZa3iqhY7dpgmFmgSk/B2lF
+      aXeaL/GTyzgSZ03wlD3aWkpJyq3gO3AcJ1lTq5BIynRJnO3z+9pAlJ/oGArSB8iQ
+      xaJO9+ni9hbIGAZDzDAEjPabDYCsWRaieabhiv0RxVjFbiSQqBNhMUcSGKTd2Alj
+      L5GenI0gTJ7ysFkinsrDegeNGR8AXMDaueOHE9dRg7D8ylfcjpOdp/RZMyl3Qd9H
+      WwIDAQAB
+      -----END PUBLIC KEY-----
+
+#application.jwt.secretKey=securesecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecure
+#application.jwt.tokenPrefix=Brearer
+#application.jwt.tokenExpirationAfterDays=14

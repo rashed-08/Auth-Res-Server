@@ -9,10 +9,9 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/")
 public class StudentController {
 
-    @GetMapping
+    @GetMapping("/")
     public String index() {
         return "Greeting from Spring Boot";
     }
